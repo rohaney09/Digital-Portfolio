@@ -461,7 +461,99 @@ gallery-container {
 }
 
 
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  .about-container, .edu-1, .edu-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-container img, .edu-1 img, .edu-2 img {
+    width: 80%;
+  }
+
+  .text-1, .text-2 {
+    padding: 20px;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .images img {
+    width: 80px;
+    margin: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .images img {
+    width: 60px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
